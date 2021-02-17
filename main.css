@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    overflow: auto;
+    background-color: white;
+    height: 100vh;
+    
+    display: grid;
+
+    grid-template: 
+    "o o o" 10%
+    "t t th" 1fr
+    "t t th" 55%
+    /10% 1fr 35%;
+
+    /*grid-gap: 10px;*/
+}
+
+.item3{
+    overflow: auto;
+    height: 100vh;
+    
+
+    display: grid;
+
+    grid-template: 
+    "on" 1fr
+    "tw" 1fr
+    "tr" 1fr
+    "f" 1fr
+    / 1fr;
+
+    grid-gap: 5px;
+}
+
+
+
+.grid-item{
+    padding: 20px;
+    background-color: ivory;
+}
+
+.item1{
+    grid-area: o;
+    background-color: white
+}
+
+.item2{
+    grid-area: t;
+    background-color: ghostwhite
+    
+}
+
+.item3{
+    grid-area: th;
+    background-color: ghostwhite;
+    padding-left: 2px;
+    
+
+}
+
+iframe{
+    height: 70%;
+    width: 100%;
+    padding-left: 50px;
+}
+
+.i2{
+    height: 100%;
+    width: 50%;
+    padding-left: 2px;
+}
+
+input:focus{
+    border: 2px solid blue;
+}
